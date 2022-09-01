@@ -16,5 +16,5 @@ Based on the pairplot, we can noticibly see the plot to be categorical rather th
 ### Week4- Linear Regression
 Conducted heart failure regression models from selecting 2 of the 13 features included in the heart failure clinical records data set at UCI by using various linear regression models.
 
-
-
+In this assignment, I counded heatmaps to visually see the relationship between each features through colors. 
+![heatmap](https://user-images.githubusercontent.com/84875731/188007872-18093c19-ed74-422c-a8eb-e891897e678f.png)
