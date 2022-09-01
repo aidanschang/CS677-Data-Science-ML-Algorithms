@@ -1,0 +1,56 @@
+"""
+Aidan Chang
+Class: CS 677
+Date: 08/04/2022
+Homework Problem #3
+Description of Problem: Use Decision Tree
+"""
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import confusion_matrix
+from sklearn import tree
+
+if __name__ == "__main__":
+    #Reading xls into df with sheet_name 
+    df = pd.read_excel('CTG.xls', sheet_name='Raw Data')
+
+    #Remove first empty row
+    df = df.dropna()
+    df = df.iloc[1:]
+    df['true_label'] = np.where(df.NSP==1, 1, 0)
+
+    #Group 3 fixed features
+    group3_features = ['MSTV', 'Width', 'Mode', 'Variance', 'true_label']
+    df= df.astype({"MSTV": "float", "Width": "float", "Mode": "float", "Variance": "float", 'true_label': 'int'})
+    df= df[group3_features]
+   
+    #create dfs that NSP = or != 1 with group3 features only
+    df_normal = df.loc[df['true_label']==1, group3_features]
+    df_abnormal = df.loc[df['true_label']!=1, group3_features]
+    x_train, x_test, y_train, y_test = train_test_split(df.iloc[:, :4], df.loc[:, ['true_label']], test_size = 0.5, random_state = 3)
+
+    """
+    Problem 3.1
+    """
+    dt_model = tree.DecisionTreeClassifier()
+    dt_model = dt_model.fit(x_train, y_train)
+    y_pred= dt_model.predict(x_test)
+
+    """
+    Problem 3.2
+    """
+    TN, FP, FN, TP = confusion_matrix(y_test, y_pred).ravel()
+    print(f'Decision Tree Accuracy: {TP/(TP+TN+FP+FN)}')
+
+    """
+    Problem 3.3
+    """
+    print(f'Decision Tree Confusion matrix\nTP:{TP}, TN:{TN}, FP:{FP}, FN:{FN}')
+    print(f'TPR: {TP/(TP+FN)}')
+    print(f'TNR: {TN/(TN+FP)}')
+    

@@ -1,0 +1,55 @@
+"""
+Aidan Chang
+Class: CS 677
+Date: 08/04/2022
+Homework Problem #2
+Description of Problem: Use Naive Bayesian NB classifier
+"""
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import confusion_matrix
+
+if __name__ == "__main__":
+    #Reading xls into df with sheet_name 
+    df = pd.read_excel('CTG.xls', sheet_name='Raw Data')
+
+    #Remove first empty row
+    df = df.dropna()
+    df = df.iloc[1:]
+    df['true_label'] = np.where(df.NSP==1, 1, 0)
+
+    #Group 3 fixed features
+    group3_features = ['MSTV', 'Width', 'Mode', 'Variance', 'true_label']
+    df= df.astype({"MSTV": "float", "Width": "float", "Mode": "float", "Variance": "float", 'true_label': 'int'})
+    df= df[group3_features]
+   
+    #create dfs that NSP = or != 1 with group3 features only
+    df_normal = df.loc[df['true_label']==1, group3_features]
+    df_abnormal = df.loc[df['true_label']!=1, group3_features]
+
+    """
+    Problem 2.1
+    """
+    x_train, x_test, y_train, y_test = train_test_split(df.iloc[:, :4], df.loc[:, ['true_label']], test_size = 0.5, random_state = 3)
+    gn_model = GaussianNB()
+    y_pred = gn_model.fit(x_train, y_train.values.ravel()).predict(x_test)
+    
+    """
+    Problem 2.2
+    """
+    TN, FP, FN, TP = confusion_matrix(y_test, y_pred).ravel()
+    print(f'Accuracy: {TP/(TP+TN+FP+FN)}')
+
+    """
+    Problem 2.3
+    """
+    print(f'Confusion matrix\nTP:{TP}, TN:{TN}, FP:{FP}, FN:{FN}')
+    print(f'TPR: {TP/(TP+FN)}')
+    print(f'TNR: {TN/(TN+FP)}')
+    
+    

@@ -1,0 +1,38 @@
+"""
+Aidan Chang
+Class: CS 677
+Date: 08/04/2022
+Homework Problem #1
+Description of Problem: Load CTG data into N and Abnormal
+"""
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+
+if __name__ == "__main__":
+    """
+    Problem 1.1
+    """
+    #Reading xls into df with sheet_name 
+    df = pd.read_excel('CTG.xls', sheet_name='Raw Data')
+
+    #Remove first empty row and all nan rows
+    df = df.dropna()
+    df = df.iloc[1:]
+    df['true_label'] = np.where(df.NSP==1, 1, 0)
+
+    """
+    Problem 1.2
+    """
+    #Group 3 fixed features
+    group3_features = ['MSTV', 'Width', 'Mode', 'Variance', 'true_label']
+
+    #create dfs that NSP = or != 1 with group3 features only
+    df_normal = df.loc[df['true_label']==1, group3_features]
+    df_abnormal = df.loc[df['true_label']!=1, group3_features]
+
+    print(df_normal)
+    print(df_abnormal)
+  
