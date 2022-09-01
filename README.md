@@ -17,7 +17,34 @@ Based on the pairplot, we can noticibly see the plot to be categorical rather th
 ### Week4- Linear Regression
 Conducted heart failure regression models from selecting 2 of the 13 features included in the heart failure clinical records data set at UCI by using various linear regression models.
 
-In this assignment, I counded two heatmaps to visually see the correlations between each features through colors, one for deceased patients (m1), one for lived patients (m0). 
+In this assignment, I counded two heatmaps to visually see the correlations between each features through colors, one for deceased patients (M1), one for survived patients (M0). 
 
 ![heatmap](https://user-images.githubusercontent.com/84875731/188007872-18093c19-ed74-422c-a8eb-e891897e678f.png)
 ![m0 heatmap](https://user-images.githubusercontent.com/84875731/188008819-b8a2fdae-18b2-41f4-b1a3-e8ad38d8447e.png)
+
+Then, select two features, x = 'serum_sodium' and y = 'serum_creatinine', and by using the same training data, I trained linear, quadratic, cubic, generalized linear model, and logged-generalized linear model for bothsurviving and deceased patients to calculate the loss functions of each models as below.
+
+![linear](https://user-images.githubusercontent.com/84875731/188009313-e3f899b6-af44-4762-9c48-3970d8bf1c92.png)
+![quadratic](https://user-images.githubusercontent.com/84875731/188009329-6130571d-c015-4ce3-a4de-f72c7090ed3b.png)
+![cubic](https://user-images.githubusercontent.com/84875731/188009360-05d1bacc-483e-42c5-81bb-5cfc3b93634e.png)
+![GLM1](https://user-images.githubusercontent.com/84875731/188009374-9aefc4d6-7db9-43a8-95cb-e1845aecaa18.png)
+![GLM2](https://user-images.githubusercontent.com/84875731/188009383-cad0070a-780c-480f-b713-004f7367c794.png)
+
+As results, the loss function for surviving models are:
+loss function for linear: 44.85216850356206
+loss function for quadratic: 44.77588771121759
+loss function for cubic: 48.95618821877799
+loss function for GLM_1: 44.60868945048049
+loss function for GLM_2: 43.70152945464571
+
+The loss function for deceased models are:
+loss function for linear: 133.0705870179978
+loss function for quadratic: 135.98257303316836
+loss function for cubic: 135.2028692678449
+loss function for GLM_1: 132.87370607293298
+loss function for GLM_2: 141.1165997705449
+
+
+
+
+
