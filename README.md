@@ -30,14 +30,16 @@ Then, select two features, x = 'serum_sodium' and y = 'serum_creatinine', and by
 ![GLM1](https://user-images.githubusercontent.com/84875731/188009374-9aefc4d6-7db9-43a8-95cb-e1845aecaa18.png)
 ![GLM2](https://user-images.githubusercontent.com/84875731/188009383-cad0070a-780c-480f-b713-004f7367c794.png)
 
-As results, the loss function for surviving models are:<br />
+**Results**<br />
+
+**The loss function for surviving models are:**<br />
 loss function for linear: 44.85216850356206<br />
 loss function for quadratic: 44.77588771121759<br />
 loss function for cubic: 48.95618821877799<br />
 loss function for GLM_1: 44.60868945048049<br />
 loss function for GLM_2: 43.70152945464571<br />
 
-The loss function for deceased models are:<br />
+**The loss function for deceased models are:**<br />
 loss function for linear: 133.0705870179978<br />
 loss function for quadratic: 135.98257303316836<br />
 loss function for cubic: 135.2028692678449<br />
