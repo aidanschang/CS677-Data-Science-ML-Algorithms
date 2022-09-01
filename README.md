@@ -11,10 +11,12 @@ Conducted banknote classicfication from he banknote authentication Data Set from
 In this assignment, I conducted a pair plot from seanborn to visualize the relationship between each features as below.
 ![image](https://user-images.githubusercontent.com/84875731/188002680-77fbb28d-c733-4378-8cd8-c6adacf8004d.png)
 Based on the pairplot, we can noticibly see the plot to be categorical rather than continuous. With that, I trained the dataset with KNN and obtained nearly 100% accuracy.
+
 <img width="461" alt="image" src="https://user-images.githubusercontent.com/84875731/188003909-429d77e3-487d-4210-b2b7-a3a793f6e436.png">
 
 ### Week4- Linear Regression
 Conducted heart failure regression models from selecting 2 of the 13 features included in the heart failure clinical records data set at UCI by using various linear regression models.
 
 In this assignment, I counded heatmaps to visually see the relationship between each features through colors. 
+
 ![heatmap](https://user-images.githubusercontent.com/84875731/188007872-18093c19-ed74-422c-a8eb-e891897e678f.png)
