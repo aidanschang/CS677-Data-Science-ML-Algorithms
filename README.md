@@ -57,6 +57,6 @@ First, I made a Random Forest Classifier Error Plot to determin number of trees 
 
 ![RF error plot](https://user-images.githubusercontent.com/84875731/188034554-c25046d7-a40f-425d-82f3-17a97479b6eb.png)
 
+Second, I trained the Naive Beyesian and Decision Tree models with the same data set as Random Forest and obtained the results as below.
 
-
-
+![Screen Shot 2022-09-01 at 5 36 31 PM](https://user-images.githubusercontent.com/84875731/188034983-11581e1a-477c-473c-99d7-2185ae55c26f.png)
