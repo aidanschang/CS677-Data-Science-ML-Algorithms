@@ -78,7 +78,7 @@ Accuracy for KMeans: 0.8761904761904762
 ![clusterings](https://user-images.githubusercontent.com/84875731/188040360-9535affb-bb7d-4835-b60c-443489409a1e.png)
 
 
-Interestingly, I plugged the testing data from the SVM model into the KMeans Clustering model, I obtained a 96% accuracy.
+Interestingly, if I extracted the predictions for the two class labels for SVMs, I would obtained 96% accuracy.
 
 <img width="391" alt="Screen Shot 2022-09-01 at 6 50 33 PM" src="https://user-images.githubusercontent.com/84875731/188041772-5343c06a-95f9-4d5b-b44f-641a22d8f1d6.png">
 
