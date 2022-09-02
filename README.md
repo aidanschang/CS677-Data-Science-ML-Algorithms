@@ -62,4 +62,14 @@ Second, I used N = 10 and d = 4 to train the Random Forest then trained the Naiv
 ![Screen Shot 2022-09-01 at 5 36 31 PM](https://user-images.githubusercontent.com/84875731/188034983-11581e1a-477c-473c-99d7-2185ae55c26f.png)
 
 ### Week6- SVM and KMeans Clusters
+Conducted various type of SVM models and KMeans Clusters with the "seeds data set" from UCI to determin the variety of wheat.
 
+In this assignment, I picked Logistic Regression algorithm and compared the results with linear SVM, Gaussian SVM, and polynomial SVM. See below for results.
+
+![Screen Shot 2022-09-01 at 6 31 24 PM](https://user-images.githubusercontent.com/84875731/188039907-2298c82a-ddc2-4ff5-9c66-d3a1ad90daa6.png)
+
+Second part of the assignment was the introduction to unsupervised learning algorithm, the KMeans Clustering. First, I used the "knee" methond to determine best k, which is 3.
+
+<img width="365" alt="image" src="https://user-images.githubusercontent.com/84875731/188040101-9f565e3c-42e6-4920-b92b-5ab223f47bd7.png">
+
+Then, re-ran my clustering with 3 clusters
