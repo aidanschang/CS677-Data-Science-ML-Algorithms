@@ -46,7 +46,13 @@ loss function for cubic: 135.2028692678449<br />
 loss function for GLM_1: 132.87370607293298<br />
 loss function for GLM_2: 141.1165997705449
 
+### Week5- Naive Bayesian, Decision Tree, and Random Forest
+Conducted algorithm comparisons between Naive Bayesian, Decision Tree, and Random Forest with the "fetal cardiotocography data set" from UCI.
 
+In this assignment, I conducted the comparison based on 4 features, FHR baseline, ALTV (percentage of time with abnormal long term variability), minimum of FHR histogram, and average of histogram.
 
+First, I made a Random Forest Classifier Error Plot to determin number of trees (N) and max depth of each subtree (d). In this case, I am using N = 10 and d = 5
+
+![RF error plot](https://user-images.githubusercontent.com/84875731/188034554-c25046d7-a40f-425d-82f3-17a97479b6eb.png)
 
 
