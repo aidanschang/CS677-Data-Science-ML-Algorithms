@@ -64,12 +64,30 @@ Second, I used N = 10 and d = 4 to train the Random Forest then trained the Naiv
 ### Week6- SVM and KMeans Clusters
 Conducted various type of SVM models and KMeans Clusters with the "seeds data set" from UCI to determin the variety of wheat.
 
-In this assignment, I picked Logistic Regression algorithm and compared the results with linear SVM, Gaussian SVM, and polynomial SVM. See below for results.
+In the first part of the assignment, I was just using 2 out of 3 class labels and I picked Logistic Regression algorithm to compared the results with linear SVM, Gaussian SVM, and polynomial SVM. See below for results.
 
 ![Screen Shot 2022-09-01 at 6 31 24 PM](https://user-images.githubusercontent.com/84875731/188039907-2298c82a-ddc2-4ff5-9c66-d3a1ad90daa6.png)
 
-Second part of the assignment was the introduction to unsupervised learning algorithm, the KMeans Clustering. First, I used the "knee" methond to determine best k, which is 3.
+For the second part of the assignment. I used all three class labels for the KMeans Clustering algorithm. First, I used the "knee" methond to determine best k, which is 3 as you can see below.
 
 <img width="365" alt="image" src="https://user-images.githubusercontent.com/84875731/188040101-9f565e3c-42e6-4920-b92b-5ab223f47bd7.png">
 
-Then, re-ran my clustering with 3 clusters
+Then, I re-ran my clustering with 3 clusters and constructed a scatter plot with their centroids. Finally, I obtained the accuracy of KMean Clustering to be 87.2%. 
+
+![clusterings](https://user-images.githubusercontent.com/84875731/188040360-9535affb-bb7d-4835-b60c-443489409a1e.png)
+
+Accuracy for KMeans: 0.8761904761904762
+
+Interestingly, I plugged the testing data from the SVM model into the KMeans Clustering model, I obtained a 96% accuracy.
+
+KMeans Prediction
+[[58  1]
+ [ 4 65]]
+              precision    recall  f1-score   support
+
+           1       0.94      0.98      0.96        59
+           2       0.98      0.94      0.96        69
+
+    accuracy                           0.96       128
+   macro avg       0.96      0.96      0.96       128
+weighted avg       0.96      0.96      0.96       128
