@@ -6,7 +6,7 @@ In my Data Science course, I learned the principle of some of the most common su
 ## Weekly Assignments
 
 ### Week3- K Nearest Neighbor
-Conducted banknote classicfication from he banknote authentication Data Set from UCI Machine learning Repository. Data set consist of 4 features ("variance", "skewness", "curtosis", "entropy") and a true label column. 
+Conducted banknote classicfication by using the "banknote authentication Data Set" from the UCI Machine learning Repository. Data set consist of 4 features ("variance", "skewness", "curtosis", "entropy") and a true label column. 
 
 In this assignment, I conducted a pair plot from seanborn to visualize the relationship between each features as below.
 
