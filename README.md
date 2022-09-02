@@ -79,6 +79,10 @@ Accuracy for KMeans: 0.8761904761904762
 
 
 Interestingly, I plugged the testing data from the SVM model into the KMeans Clustering model, I obtained a 96% accuracy.
+
 <img width="391" alt="Screen Shot 2022-09-01 at 6 50 33 PM" src="https://user-images.githubusercontent.com/84875731/188041772-5343c06a-95f9-4d5b-b44f-641a22d8f1d6.png">
+
+## Course Summary
+I found fascinating with data science and how machine learning algorithms are implemented and used in different senerios. As results, I self studied the Neural Network in the concentrations on propagations, loss functions, and activation functions. Ultimately, I conducted my term project on the topic of Convolution Neural Network wiht the MNIST data set from Keras and will continue concentrate in the field of computer vision/object detection.
 
 
