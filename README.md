@@ -1,23 +1,23 @@
 # Machine-Learning-Algorithms
 
 ## Overview
-In my Data Science course, I learned the principle of some of the common supervised ML algorithms such as linear/logistic regression, KNN, SVM, Decision Tree, and Random Forest, as well as unsupervised, KMeans algorithm. For my term project, I self-researched how the Deep Learning Neural Network works and picked a CNN topic to train and test the MNIST dataset from Keras.
+In my Data Science course, I learned the principle of some common supervised ML algorithms such as linear/logistic regression, KNN, SVM, Decision Tree, Random Forest, and KMeans unsupervised algorithm. For my term project, I took the initiative to learn Convolutional Neural Networks and trained a CNN on the MNIST(handwritten numbers) dataset from Keras.
 
 ## Weekly Assignments
 
 ### Week3- K Nearest Neighbor
-Conducted banknote classification by using the "banknote authentication Data Set" from the UCI Machine learning Repository. The data set consists of 4 features ("variance", "skewness", "curtosis", and "entropy") and a true label column. 
+Conducted banknote classification using the "banknote authentication Data Set" from the UCI Machine Learning Repository. The data set consists of 4 features ("variance", "skewness", "curtosis", and "entropy") and a true label column. 
 
-In this assignment, I conducted a pair plot from seaborn to visualize the relationship between each features as below.
+In this assignment, I conducted a pair plot from Seaborn to visualize the relationship between each feature as below.
 
 ![image](https://user-images.githubusercontent.com/84875731/188002680-77fbb28d-c733-4378-8cd8-c6adacf8004d.png)
 
-Based on the pair plot, we can noticeably see the plot to be categorical rather than continuous. With that, I trained the dataset with KNN and obtained nearly 100% accuracy.
+Based on the pair plot, we can identify the plot to be categorical rather than continuous. Given that, I trained the dataset with KNN and obtained nearly 100% accuracy.
 
 <img width="461" alt="image" src="https://user-images.githubusercontent.com/84875731/188003909-429d77e3-487d-4210-b2b7-a3a793f6e436.png">
 
 ### Week4- Linear Regression
-Conducted heart failure regression models by selecting 2 of the 13 features included in the heart failure clinical records data set at UCI by using various linear regression models.
+Conducted heart failure regression models by selecting 2 of the 13 features included in the heart failure clinical records data set from the UCI.
 
 In this assignment, I created two heatmaps to visually see the correlations between each feature through colors, one for deceased patients (M1), and one for survived patients (M0). 
 
